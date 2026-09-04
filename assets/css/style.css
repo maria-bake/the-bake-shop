@@ -792,7 +792,7 @@ p { margin: 0; }
   margin-inline: auto;
   aspect-ratio: 1;
   object-fit: cover;
-  object-position: center 18%;
+  object-position: center;
   border-radius: 999px;
   border: 4px solid #fff;
   box-shadow: var(--sh);
@@ -819,7 +819,7 @@ p { margin: 0; }
   .about-photo img {
     width: 100%; height: auto;
     aspect-ratio: 4 / 5;
-    object-position: center 22%;
+    object-position: center;
     border-radius: var(--r-xl);
     border: 0;
     box-shadow: var(--sh-lg);

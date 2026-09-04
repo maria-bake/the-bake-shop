@@ -248,7 +248,9 @@
     if (!host) return;
 
     host.innerHTML = SHOP.sizes.map(function (s, i) {
-      var rows = SHOP.flavours.map(function (f) {
+      var rows = SHOP.flavours.filter(function (f) {
+        return s.price[f.id] != null;
+      }).map(function (f) {
         return '<li>' +
           '<span class="fl-name">' + f.label +
             '<span class="fl-note">' + f.note + '</span>' +
@@ -286,7 +288,8 @@
 
     host.innerHTML = SHOP.specials.map(function (sp, i) {
       var price = sp.poa
-        ? '<span class="sp-price"><small>Price on request</small></span>'
+        ? '<span class="sp-price"><small>Price on request' +
+            (sp.unit ? ' · ' + sp.unit : '') + '</small></span>'
         : '<span class="sp-price">' +
             (sp.from ? '<small>from</small>' : '') + money(sp.price) +
             (sp.unit ? '<small>' + sp.unit + '</small>' : '') +
@@ -564,9 +567,14 @@
     var size    = SHOP.sizes.filter(function (s) { return s.id === sizeId; })[0];
     var fl      = SHOP.flavours.filter(function (f) { return f.label === flavour; })[0];
 
-    if (size && fl) {
+    if (size && fl && size.price[fl.id] != null) {
       $('#oTotalLabel').textContent = size.label + ' · ' + fl.label + ' — list price';
       $('#oTotalVal').textContent   = money(size.price[fl.id]);
+    } else if (size && fl) {
+      /* A real combination she does not make in that size, e.g. a bento red
+         velvet. Say so rather than showing a price that does not exist. */
+      $('#oTotalLabel').textContent = fl.label + ' is not made in ' + size.label + ' — ask her';
+      $('#oTotalVal').textContent   = 'on request';
     } else {
       $('#oTotalLabel').textContent = 'Pick a size and flavour to see the list price';
       $('#oTotalVal').textContent   = 'from ' + money(SHOP.startsFrom);
@@ -590,7 +598,11 @@
     if (attached)      L.push('Design: ' + attached.name);
     if (size)          L.push('Size: ' + size.label + ' (' + size.serves.toLowerCase() + ')');
     if (flavour)       L.push('Flavour: ' + flavour);
-    if (size && fl)    L.push('List price: ' + money(size.price[fl.id]));
+    if (size && fl && size.price[fl.id] != null) {
+      L.push('List price: ' + money(size.price[fl.id]));
+    } else if (size && fl) {
+      L.push('(I know ' + fl.label + ' may not come in ' + size.label + ' — please advise.)');
+    }
     if (val('#oDate')) L.push('Needed on: ' + val('#oDate'));
     if (val('#oMsg'))  L.push('Message on the cake: "' + val('#oMsg') + '"');
     if (val('#oNotes')) { L.push(''); L.push('Details:'); L.push(val('#oNotes')); }

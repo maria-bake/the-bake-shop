@@ -36,7 +36,8 @@ const SHOP = {
     { id: 'strawberry',   label: 'Strawberry',   note: 'fresh and fruity'     },
     { id: 'mango',        label: 'Mango',        note: 'sweet seasonal mango' },
     { id: 'chocolate',    label: 'Chocolate',    note: 'deep cocoa'           },
-    { id: 'biscoff',      label: 'Biscoff',      note: 'caramel biscuit'      }
+    { id: 'biscoff',      label: 'Biscoff',      note: 'caramel biscuit'      },
+    { id: 'redvelvet',    label: 'Red velvet',   note: 'cream cheese frosting' }
   ],
 
   /* ---------- size × flavour price matrix ---------- */
@@ -53,14 +54,16 @@ const SHOP = {
       serves: 'Serves 4–6',
       img: 'cake-pink-hearts',
       blurb: 'The everyday birthday size. Enough for a small family table.',
-      price: { vanilla: 530, butterscotch: 580, strawberry: 580, mango: 580, chocolate: 600, biscoff: 650 }
+      price: { vanilla: 530, butterscotch: 580, strawberry: 580, mango: 580, chocolate: 600, biscoff: 650,
+               redvelvet: 700 }
     },
     {
       id: 'one', label: '1 Kg', sub: 'One kilo cake',
       serves: 'Serves 8–12',
       img: 'cake-pink-ribbon',
       blurb: 'For a proper party. More room for piping, ribbons and pearls.',
-      price: { vanilla: 1050, butterscotch: 1100, strawberry: 1100, mango: 1100, chocolate: 1200, biscoff: 1300 }
+      price: { vanilla: 1050, butterscotch: 1100, strawberry: 1100, mango: 1100, chocolate: 1200, biscoff: 1300,
+               redvelvet: 1350 }
     }
   ],
 
@@ -76,8 +79,8 @@ const SHOP = {
       desc: 'Dark chocolate ganache, piped border, hand-written message on top.' },
     { name: 'Tier cake',         price: 1150, from: true, unit: '',            img: 'cake-tier-pink',
       desc: 'Two or three tiers with Lambeth piping. Needs a few days of notice.' },
-    { name: 'Biscoff cheesecake cups', poa: true, unit: 'price on request', img: 'cheesecake-biscoff',
-      desc: 'Set in little tubs with a whole Biscoff biscuit on top. Sold in sets.' },
+    { name: 'Biscoff cheesecake cups', poa: true, unit: 'minimum order 2', img: 'cheesecake-biscoff',
+      desc: 'Set in little tubs with a whole Biscoff biscuit on top. Minimum order is 2 cups.' },
     { name: 'Dessert box',       poa: true, unit: 'price on request', img: 'bento-cheesecake-set',
       desc: 'A bento cake, cupcakes and cheesecake cups packed together as a hamper.' }
   ],
