@@ -77,11 +77,13 @@ const SHOP = {
       desc: 'Tall cream cake with piped blossoms and a candle set into the top.' },
     { name: 'Chocolate truffle', price: 750,  unit: '½ kg',          img: 'cake-truffle',
       desc: 'Dark chocolate ganache, piped border, hand-written message on top.' },
+    { name: 'Red velvet',        price: 700,  unit: '½ kg',          img: 'cake-red-velvet',
+      desc: 'Red cocoa sponge under cream cheese frosting, with a shell border and red velvet crumb. ₹1,350 for 1 kg.' },
     { name: 'Tier cake',         price: 1150, from: true, unit: '',            img: 'cake-tier-pink',
       desc: 'Two or three tiers with Lambeth piping. Needs a few days of notice.' },
     { name: 'Biscoff cheesecake cups', poa: true, unit: 'minimum order 2', img: 'cheesecake-biscoff',
       desc: 'Set in little tubs with a whole Biscoff biscuit on top. Minimum order is 2 cups.' },
-    { name: 'Dessert box',       poa: true, unit: 'price on request', img: 'bento-cheesecake-set',
+    { name: 'Dessert box',       poa: true, unit: '',                 img: 'bento-cheesecake-set',
       desc: 'A bento cake, cupcakes and cheesecake cups packed together as a hamper.' }
   ],
 
@@ -102,6 +104,7 @@ const SHOP = {
     'cake-pink-hearts': [640, 960],
     'cake-pink-ribbon': [640, 1200],
     'cake-red-bows': [480, 480],
+    'cake-red-velvet': [640, 960],
     'cake-rose-ruffle': [480, 480],
     'cake-tier-pink': [640, 960],
     'cake-truffle': [640, 960],
@@ -111,7 +114,9 @@ const SHOP = {
     'combo-red-white': [640, 1200],
     'cupcakes-box': [640, 1200],
     'cupcakes-hearts': [640, 1200],
-    'mariya': [640, 960]
+    'mariya': [640, 960],
+    'mariya-about': [640, 1010],
+    'mariya-about-sq': [360, 476]
   },
 
   /* ---------- the gallery ---------- */
@@ -126,6 +131,8 @@ const SHOP = {
       desc: 'One piped rose filling the whole top, in a takeaway bento box.' },
     { img: 'cake-truffle',           name: 'Chocolate Truffle',   cat: 'Cakes',
       desc: 'Glossy ganache with a piped border and gold hand lettering.' },
+    { img: 'cake-red-velvet',        name: 'Red Velvet',          cat: 'Cakes',
+      desc: 'Cream cheese frosting with a shell border and red velvet crumb around the edge.' },
     { img: 'cupcakes-box',           name: 'Rosette Cupcakes',    cat: 'Cupcakes',
       desc: 'Six cupcakes in pink and cream with pearls and gold dragées.' },
     { img: 'combo-red-white',        name: 'Red Ribbon Combo',    cat: 'Combos',

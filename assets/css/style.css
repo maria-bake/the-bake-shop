@@ -1204,13 +1204,6 @@ footer {
 }
 [data-rev].in { opacity: 1; transform: none; }
 
-/* The logo breathes very gently, so the hero is not completely static. */
-@keyframes float {
-  0%, 100% { transform: translateY(0)     rotate(0deg);    }
-  50%      { transform: translateY(-7px)  rotate(-1.1deg); }
-}
-.hero-portrait { animation: float 6.5s ease-in-out infinite; }
-
 /* Section headings get a soft blossom that drifts in behind them. */
 .rule { animation: swell 5s ease-in-out infinite; transform-origin: center; }
 @keyframes swell {
