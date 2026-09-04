@@ -89,7 +89,16 @@
 <!-- ============================== HERO =============================== -->
 <section class="hero" id="home">
   <div class="wrap">
-    <img class="hero-logo" src="assets/logo.png" alt="_thebakeshop._ — Sweet &amp; Delicious" width="168" height="168">
+    <div class="hero-portrait">
+      <picture>
+        <source type="image/webp" sizes="200px" srcset="assets/img/mariya-sm.webp 640w, assets/img/mariya.webp 960w">
+        <img src="assets/img/mariya-sm.jpg" sizes="200px"
+             srcset="assets/img/mariya-sm.jpg 640w, assets/img/mariya.jpg 960w"
+             alt="Mariya, the baker behind _thebakeshop._" width="200" height="200"
+             fetchpriority="high" decoding="async">
+      </picture>
+    </div>
+    <p class="hero-by">By Mariya</p>
     <p class="hero-tag">Sweet &amp; Delicious</p>
     <h1>Cakes for every<span class="script">little occasion</span></h1>
     <p class="hero-lead">

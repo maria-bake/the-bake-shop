@@ -371,19 +371,40 @@ p { margin: 0; }
   padding-bottom: clamp(2.4rem, 8vw, 4rem);
   text-align: center;
 }
-.hero-logo {
-  width: clamp(112px, 30vw, 168px);
-  height: auto;
+/* Mariya's portrait opens the page. The ring is drawn with a spread shadow
+   rather than a border so the circle keeps its exact size at every width. */
+.hero-portrait {
+  position: relative;
+  width: clamp(126px, 34vw, 190px);
+  aspect-ratio: 1;
   margin: 0 auto clamp(1rem, 3vw, 1.5rem);
-  border-radius: 24px;
-  box-shadow: var(--sh);
+}
+/* <picture> is an inline wrapper with no size of its own, so it has to be told
+   to fill the circle before the image inside it can. */
+.hero-portrait picture { display: block; width: 100%; height: 100%; }
+.hero-portrait img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 16%;
+  border-radius: 999px;
+  box-shadow: 0 0 0 5px #fff, 0 0 0 7px var(--line-2), var(--sh-lg);
 }
 .hero h1 { margin-bottom: .1rem; }
 .hero h1 .script { display: block; font-size: 1.05em; line-height: 1.05; }
 
+/* Her own words from the Instagram bio, sitting right under her face. */
+.hero-by {
+  font-family: var(--font-script);
+  font-weight: 600;
+  font-size: clamp(1.5rem, 5.5vw, 2rem);
+  line-height: 1;
+  color: var(--rose-dark);
+  margin-bottom: .45rem;
+}
 .hero-tag {
   font-size: .7rem; font-weight: 700; letter-spacing: .3em;
-  text-transform: uppercase; color: var(--rose-dark);
+  text-transform: uppercase; color: var(--ink-3);
   margin-bottom: 1.1rem;
 }
 .hero-lead {
@@ -1188,7 +1209,7 @@ footer {
   0%, 100% { transform: translateY(0)     rotate(0deg);    }
   50%      { transform: translateY(-7px)  rotate(-1.1deg); }
 }
-.hero-logo { animation: float 6.5s ease-in-out infinite; }
+.hero-portrait { animation: float 6.5s ease-in-out infinite; }
 
 /* Section headings get a soft blossom that drifts in behind them. */
 .rule { animation: swell 5s ease-in-out infinite; transform-origin: center; }
