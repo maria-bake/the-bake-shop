@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 300 300" width="300" height="300" role="presentation" aria-hidden="true">
+  <defs>
+    <radialGradient id="cPlBody" cx="0.36" cy="0.30" r="0.76">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.40" stop-color="#FEFAFC"/>
+      <stop offset="0.74" stop-color="#F8ECF2"/>
+      <stop offset="1" stop-color="#F0DDE6"/>
+    </radialGradient>
+
+    <radialGradient id="cPlSpec" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="1"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.8"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <radialGradient id="cPlRim" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0.74" stop-color="#F0DDE6" stop-opacity="0"/>
+      <stop offset="1" stop-color="#F0DDE6" stop-opacity="0.5"/>
+    </radialGradient>
+
+    <filter id="cPlSoft" x="-25%" y="-25%" width="150%" height="150%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="2.6"/>
+    </filter>
+
+    <!-- unit pearl, radius 20, lit from upper-left -->
+    <g id="cPlPearl">
+      <circle cx="0" cy="0" r="20" fill="url(#cPlBody)"/>
+      <circle cx="0" cy="0" r="20" fill="url(#cPlRim)"/>
+      <path d="M12.3 10.3 A16 16 0 0 1 -7 14.4" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" opacity="0.5"/>
+      <ellipse cx="-6.5" cy="-8.5" rx="6.4" ry="4.8" transform="rotate(-32 -6.5 -8.5)" fill="url(#cPlSpec)"/>
+      <circle cx="-11.5" cy="-1.5" r="1.7" fill="#FFFFFF" opacity="0.55"/>
+    </g>
+  </defs>
+
+  <!-- soft contact shadows: one blur pass for the whole set -->
+  <g filter="url(#cPlSoft)" fill="#F0DDE6" opacity="0.6">
+    <ellipse cx="62" cy="86" rx="14.6" ry="4.4"/>
+    <ellipse cx="133" cy="50" rx="7.7" ry="2.3"/>
+    <ellipse cx="202" cy="106" rx="11.2" ry="3.4"/>
+    <ellipse cx="99" cy="153" rx="5.6" ry="1.7"/>
+    <ellipse cx="238" cy="189" rx="13.8" ry="4.2"/>
+    <ellipse cx="153" cy="225" rx="9" ry="2.7"/>
+    <ellipse cx="61" cy="248" rx="6.5" ry="2"/>
+    <ellipse cx="255" cy="267" rx="4.3" ry="1.3"/>
+  </g>
+
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(60 68) scale(0.85)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(132 40) scale(0.45)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(200 92) scale(0.65)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(98 146) scale(0.325)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(236 172) scale(0.8)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(152 214) scale(0.525)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(60 240) scale(0.375)"/>
+  <use xlink:href="#cPlPearl" href="#cPlPearl" transform="translate(254 262) scale(0.25)"/>
+</svg>

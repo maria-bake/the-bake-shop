@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 240 40" width="240" height="40" role="presentation" aria-hidden="true">
+  <defs>
+    <linearGradient id="cDvLineL" gradientUnits="userSpaceOnUse" x1="8" y1="20" x2="94" y2="20">
+      <stop offset="0" stop-color="#F7C9DA" stop-opacity="0"/>
+      <stop offset="1" stop-color="#F7C9DA" stop-opacity="0.95"/>
+    </linearGradient>
+    <linearGradient id="cDvLineR" gradientUnits="userSpaceOnUse" x1="232" y1="20" x2="146" y2="20">
+      <stop offset="0" stop-color="#F7C9DA" stop-opacity="0"/>
+      <stop offset="1" stop-color="#F7C9DA" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <linearGradient id="cDvPetalFill" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.3" stop-color="#FDF1F6"/>
+      <stop offset="0.72" stop-color="#FBE0EA"/>
+      <stop offset="1" stop-color="#F7C9DA"/>
+    </linearGradient>
+    <linearGradient id="cDvPetalShade" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#F7C9DA" stop-opacity="0.04"/>
+      <stop offset="1" stop-color="#F7C9DA" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="cDvPetalLight" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <g id="cDvPetal">
+      <path d="M0 0 C-29 -17 -57 -49 -60 -87 C-63 -117 -49 -141 -25 -149 C-13 -153 -6 -145 0 -135 C7 -146 16 -154 29 -150 C53 -141 67 -117 62 -87 C57 -48 29 -17 0 0 Z" fill="url(#cDvPetalFill)"/>
+      <path d="M0 -135 C-6 -145 -13 -153 -25 -149 C-49 -141 -63 -117 -60 -87 C-57 -48 -29 -17 0 0 C-2 -45 -1 -90 0 -135 Z" fill="url(#cDvPetalShade)"/>
+      <path d="M0 -135 C7 -146 16 -154 29 -150 C53 -141 67 -117 62 -87 C57 -48 29 -17 0 0 C1 -45 2 -90 0 -135 Z" fill="url(#cDvPetalLight)"/>
+      <path d="M0 -8 C1 -52 1 -100 0 -131" fill="none" stroke="#F7C9DA" stroke-width="9" stroke-linecap="round" opacity="0.5"/>
+    </g>
+  </defs>
+
+  <path d="M10 20 H94" fill="none" stroke="url(#cDvLineL)" stroke-width="1.15" stroke-linecap="round"/>
+  <path d="M230 20 H146" fill="none" stroke="url(#cDvLineR)" stroke-width="1.15" stroke-linecap="round"/>
+
+  <circle cx="99" cy="20" r="2.1" fill="#F7C9DA" opacity="0.85"/>
+  <circle cx="141" cy="20" r="2.1" fill="#F7C9DA" opacity="0.85"/>
+
+  <g>
+    <use xlink:href="#cDvPetal" href="#cDvPetal" transform="translate(120 20) rotate(-8) scale(0.1)"/>
+    <use xlink:href="#cDvPetal" href="#cDvPetal" transform="translate(120 20) rotate(66) scale(0.094)"/>
+    <use xlink:href="#cDvPetal" href="#cDvPetal" transform="translate(120 20) rotate(139) scale(0.102)"/>
+    <use xlink:href="#cDvPetal" href="#cDvPetal" transform="translate(120 20) rotate(212) scale(0.092)"/>
+    <use xlink:href="#cDvPetal" href="#cDvPetal" transform="translate(120 20) rotate(288) scale(0.098)"/>
+    <circle cx="120" cy="20" r="2.9" fill="#FBE0EA"/>
+    <circle cx="119.4" cy="19.4" r="1.5" fill="#FFFFFF" opacity="0.9"/>
+    <g fill="#C96E92" opacity="0.45">
+      <circle cx="118.2" cy="17.4" r="0.62"/>
+      <circle cx="122.1" cy="18.3" r="0.58"/>
+      <circle cx="121.6" cy="22.2" r="0.6"/>
+      <circle cx="117.7" cy="21.5" r="0.55"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,119 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 460 460" width="460" height="460" role="presentation" aria-hidden="true">
+  <defs>
+    <radialGradient id="cBrWash" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FDF1F6" stop-opacity="0.95"/>
+      <stop offset="0.55" stop-color="#FDF1F6" stop-opacity="0.48"/>
+      <stop offset="1" stop-color="#FDF1F6" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="cBrPetalFill" x1="0.5" y1="1" x2="0.5" y2="0">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.24" stop-color="#FDF1F6"/>
+      <stop offset="0.66" stop-color="#FBE0EA"/>
+      <stop offset="1" stop-color="#F7C9DA"/>
+    </linearGradient>
+
+    <linearGradient id="cBrPetalShade" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#F7C9DA" stop-opacity="0.03"/>
+      <stop offset="0.6" stop-color="#F7C9DA" stop-opacity="0.24"/>
+      <stop offset="1" stop-color="#F7C9DA" stop-opacity="0.6"/>
+    </linearGradient>
+
+    <linearGradient id="cBrPetalLight" x1="0" y1="0.5" x2="1" y2="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.55"/>
+    </linearGradient>
+
+    <radialGradient id="cBrHeart" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.95"/>
+      <stop offset="0.5" stop-color="#FFFFFF" stop-opacity="0.6"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="cBrBudFill" x1="0.5" y1="1" x2="0.3" y2="0">
+      <stop offset="0" stop-color="#F7C9DA"/>
+      <stop offset="0.55" stop-color="#FBE0EA"/>
+      <stop offset="1" stop-color="#FDF1F6"/>
+    </linearGradient>
+
+    <!-- broad notched blossom petal with a fan of fine veins -->
+    <g id="cBrPetalUnit">
+      <path d="M0 0 C-29 -17 -57 -49 -60 -87 C-63 -117 -49 -141 -25 -149 C-13 -153 -6 -145 0 -135 C7 -146 16 -154 29 -150 C53 -141 67 -117 62 -87 C57 -48 29 -17 0 0 Z" fill="url(#cBrPetalFill)"/>
+      <path d="M0 -135 C-6 -145 -13 -153 -25 -149 C-49 -141 -63 -117 -60 -87 C-57 -48 -29 -17 0 0 C-2 -45 -1 -90 0 -135 Z" fill="url(#cBrPetalShade)"/>
+      <path d="M0 -135 C7 -146 16 -154 29 -150 C53 -141 67 -117 62 -87 C57 -48 29 -17 0 0 C1 -45 2 -90 0 -135 Z" fill="url(#cBrPetalLight)"/>
+      <g fill="none" stroke="#F7C9DA" stroke-linecap="round">
+        <path d="M0 -8 C1 -52 1 -100 0 -131" stroke-width="1.4" opacity="0.6"/>
+        <path d="M-1 -9 C-12 -47 -22 -85 -29 -121" stroke-width="1" opacity="0.45"/>
+        <path d="M1 -9 C12 -47 23 -84 31 -119" stroke-width="1" opacity="0.45"/>
+        <path d="M-2 -7 C-21 -40 -39 -68 -51 -100" stroke-width="0.9" opacity="0.38"/>
+        <path d="M2 -7 C21 -40 40 -67 52 -98" stroke-width="0.9" opacity="0.38"/>
+        <path d="M-3 -5 C-26 -30 -44 -50 -56 -72" stroke-width="0.8" opacity="0.28"/>
+        <path d="M3 -5 C26 -30 45 -49 57 -70" stroke-width="0.8" opacity="0.28"/>
+      </g>
+    </g>
+
+    <g id="cBrStamen">
+      <path d="M0 0 C3 -13 7 -24 6 -35" fill="none" stroke="#E39BB8" stroke-width="1.05" stroke-linecap="round" opacity="0.5"/>
+      <ellipse cx="6" cy="-38" rx="2.7" ry="1.9" transform="rotate(-14 6 -38)" fill="#C96E92" opacity="0.5"/>
+    </g>
+
+    <g id="cBrBud">
+      <path d="M0 0 C-12 -6 -19 -21 -16 -37 C-13 -53 -4 -63 3 -67 C11 -61 18 -49 19 -33 C20 -17 12 -4 0 0 Z" fill="url(#cBrBudFill)"/>
+      <path d="M0 0 C-12 -6 -19 -21 -16 -37 C-13 -53 -4 -63 3 -67 C0 -44 -1 -20 0 0 Z" fill="#F7C9DA" opacity="0.34"/>
+      <path d="M3 -67 C11 -61 18 -49 19 -33 C20 -17 12 -4 0 0 C1 -22 2 -46 3 -67 Z" fill="#FFFFFF" opacity="0.4"/>
+      <path d="M0 -3 C1 -22 2 -44 3 -62" fill="none" stroke="#F7C9DA" stroke-width="1.2" stroke-linecap="round" opacity="0.55"/>
+      <path d="M0 0 C3 13 8 22 17 30" fill="none" stroke="#F7C9DA" stroke-width="1.5" stroke-linecap="round" opacity="0.45"/>
+    </g>
+  </defs>
+
+  <!-- airy wash under the blossom -->
+  <ellipse cx="312" cy="330" rx="216" ry="200" fill="url(#cBrWash)"/>
+  <ellipse cx="164" cy="386" rx="96" ry="86" fill="url(#cBrWash)" opacity="0.7"/>
+
+  <!-- fine stems -->
+  <path d="M460 246 C412 258 366 282 330 314" fill="none" stroke="#F7C9DA" stroke-width="1.3" stroke-linecap="round" opacity="0.3"/>
+  <path d="M232 460 C266 424 292 380 302 330" fill="none" stroke="#F7C9DA" stroke-width="1.2" stroke-linecap="round" opacity="0.28"/>
+
+  <!-- large open five-petal blossom, bleeding off bottom and right -->
+  <g>
+    <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(300 318) rotate(212) scale(0.95)"/>
+    <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(300 318) rotate(292) scale(1)"/>
+    <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(300 318) rotate(136) scale(1.04)"/>
+    <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(300 318) rotate(62) scale(0.98)"/>
+    <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(300 318) rotate(-12) scale(1.07)"/>
+
+    <circle cx="300" cy="318" r="62" fill="url(#cBrHeart)"/>
+
+    <g>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(4) scale(1.15)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(27) scale(0.92)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(49) scale(1.08)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(70) scale(0.84)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(93) scale(1.12)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(115) scale(0.9)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(138) scale(1.05)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(159) scale(0.8)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(181) scale(1.1)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(203) scale(0.88)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(226) scale(1.02)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(247) scale(0.82)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(269) scale(1.14)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(291) scale(0.94)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(313) scale(1.06)"/>
+      <use xlink:href="#cBrStamen" href="#cBrStamen" transform="translate(300 318) rotate(336) scale(0.86)"/>
+    </g>
+
+    <circle cx="300" cy="318" r="9" fill="#FBE0EA"/>
+    <circle cx="298" cy="316" r="5" fill="#FFFFFF" opacity="0.9"/>
+    <circle cx="303" cy="321" r="2" fill="#E39BB8" opacity="0.35"/>
+  </g>
+
+  <!-- buds -->
+  <use xlink:href="#cBrBud" href="#cBrBud" transform="translate(150 384) rotate(-32) scale(0.88)"/>
+  <use xlink:href="#cBrBud" href="#cBrBud" transform="translate(404 176) rotate(26) scale(0.6)"/>
+
+  <!-- loose petals drifting away from the flower -->
+  <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(96 292) rotate(148) scale(0.24)"/>
+  <use xlink:href="#cBrPetalUnit" href="#cBrPetalUnit" transform="translate(322 108) rotate(-46) scale(0.2)"/>
+</svg>

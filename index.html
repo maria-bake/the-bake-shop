@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>_thebakeshop._ | Home Baked Cakes in Howly, Assam</title>
+<meta name="description" content="Cakes baked to order by Mariya in Howly, Barpeta. Bento cakes, tiered cakes, cupcakes and dessert boxes. Order on WhatsApp or Instagram.">
+<meta name="theme-color" content="#FDF7FB">
+<meta name="author" content="Mariya · _thebakeshop._">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="_thebakeshop._ — Home baked cakes by Mariya">
+<meta property="og:description" content="Home baked cakes by Mariya in Howly, Assam. Baked to order, one at a time.">
+<meta property="og:image" content="https://maria-bake.github.io/the-bake-shop/assets/img/cake-pink-ribbon.jpg">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="assets/favicon.png" type="image/png">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Playfair+Display:wght@500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- ============================ BACKGROUND ============================ -->
+<div class="bg" aria-hidden="true">
+  <img class="bg-tl"      src="assets/decor/corner-tl.svg" alt="" width="430" height="430">
+  <img class="bg-br"      src="assets/decor/corner-br.svg" alt="" width="500" height="500">
+  <img class="bg-pearls bg-p1" src="assets/decor/pearls.svg" alt="" width="110" height="110">
+  <img class="bg-pearls bg-p2" src="assets/decor/pearls.svg" alt="" width="92"  height="92">
+</div>
+<canvas id="petals" aria-hidden="true"></canvas>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============================== NAV ================================ -->
+<header id="nav">
+  <div class="wrap">
+    <a class="brand" href="#home">
+      <img src="assets/logo.png" alt="" width="44" height="44">
+      <span>
+        <b>_thebakeshop._</b>
+        <small>Sweet &amp; Delicious</small>
+      </span>
+    </a>
+
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#menu">Menu &amp; Prices</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#about">About Mariya</a>
+      <a href="#order">Order</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <a class="btn nav-cta" href="https://wa.me/919864848384" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+      Order now
+    </a>
+
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mnav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div id="mnav">
+  <ul>
+    <li><a href="#menu">Menu &amp; Prices</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#about">About Mariya</a></li>
+    <li><a href="#order">Order</a></li>
+    <li><a href="#faq">FAQ</a></li>
+  </ul>
+  <a class="btn btn-wa btn-block" href="https://wa.me/919864848384" target="_blank" rel="noopener">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+    Message on WhatsApp
+  </a>
+</div>
+
+<a id="fab" class="hide" href="https://wa.me/919864848384" target="_blank" rel="noopener" aria-label="Order on WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.87 9.87 0 0 0 4.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2Zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.83 2.42a8.19 8.19 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.24 8.23Zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.79.97-.14.16-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.4-.42-.56-.43h-.47c-.17 0-.43.06-.66.31-.22.25-.87.85-.87 2.07s.89 2.4 1.02 2.56c.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.08.15-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+</a>
+
+<main id="main">
+
+<!-- ============================== HERO =============================== -->
+<section class="hero" id="home">
+  <div class="wrap">
+    <img class="hero-logo" src="assets/logo.png" alt="_thebakeshop._ — Sweet &amp; Delicious" width="168" height="168">
+    <p class="hero-tag">Sweet &amp; Delicious</p>
+    <h1>Cakes for every<span class="script">little occasion</span></h1>
+    <p class="hero-lead">
+      Bento cakes, tiered cakes, cupcakes and dessert boxes, all baked to order in Mariya's
+      own kitchen in Howly. Tell her what you have in mind on WhatsApp and she will bake it for your date.
+    </p>
+
+    <div class="hero-cta">
+      <a class="btn btn-wa btn-lg" href="https://wa.me/919864848384" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+        Order on WhatsApp
+      </a>
+      <a class="btn btn-ghost btn-lg" href="#menu">See the price list</a>
+    </div>
+
+    <div class="hero-meta">
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+        Howly, Barpeta · Assam
+      </span>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 9a3.5 3.5 0 0 1 7 2.5C19 16.5 12 21 12 21Z"/></svg>
+        Piped by hand
+      </span>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 21V10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v11z"/><path d="M12 6V3"/><path d="M4 15h16"/></svg>
+        Baked to order
+      </span>
+      <span class="chip">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="m12 3 2.6 5.7 6.4.7-4.8 4.3 1.4 6.3L12 16.8 6.4 20l1.4-6.3L3 9.4l6.4-.7z"/></svg>
+        6 flavours
+      </span>
+    </div>
+  </div>
+
+  <div class="hero-strip" tabindex="0" role="group" aria-label="A few of Mariya's cakes">
+    <figure>
+      <picture>
+        <source type="image/webp" sizes="(min-width:700px) 25vw, 62vw" srcset="assets/img/cake-pink-ribbon-sm.webp 640w, assets/img/cake-pink-ribbon.webp 1200w">
+        <img src="assets/img/cake-pink-ribbon-sm.jpg" alt="Pink buttercream cake with piped ruffles, organza ribbons and edible pearls" width="640" height="853" fetchpriority="high" decoding="async">
+      </picture>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" sizes="(min-width:700px) 25vw, 62vw" srcset="assets/img/bento-rose-sm.webp 640w, assets/img/bento-rose.webp 1200w">
+        <img src="assets/img/bento-rose-sm.jpg" alt="Bento cake with a single piped rose, in a takeaway box" width="640" height="853" loading="lazy" decoding="async">
+      </picture>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" sizes="(min-width:700px) 25vw, 62vw" srcset="assets/img/cake-tier-pink-sm.webp 640w, assets/img/cake-tier-pink.webp 1200w">
+        <img src="assets/img/cake-tier-pink-sm.jpg" alt="Three tier blush and cream cake with shell piping and a gold birthday topper" width="640" height="853" loading="lazy" decoding="async">
+      </picture>
+    </figure>
+    <figure>
+      <picture>
+        <source type="image/webp" sizes="(min-width:700px) 25vw, 62vw" srcset="assets/img/cake-candle-blossom-sm.webp 640w, assets/img/cake-candle-blossom.webp 1200w">
+        <img src="assets/img/cake-candle-blossom-sm.jpg" alt="Ivory cake with piped pink blossoms, pearls and a single candle" width="640" height="853" loading="lazy" decoding="async">
+      </picture>
+    </figure>
+  </div>
+</section>
+
+<!-- ========================= WHY ORDER HERE ========================== -->
+<section class="sec sec-tight" id="why">
+  <div class="wrap">
+    <h2 class="sr-only">Why order here</h2>
+    <div class="grid g4">
+      <div class="feat" data-rev style="--d:0ms">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 21V10a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4v11z"/><path d="M12 6V3"/><path d="M4 15h16"/></svg></div>
+        <h3>Baked to order</h3>
+        <p>Every cake is baked fresh for your date, never made in advance and kept on a shelf.</p>
+      </div>
+      <div class="feat" data-rev style="--d:90ms">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 3v3M5.6 5.6l2.1 2.1M3 12h3M18 12h3M16.3 7.7l2.1-2.1"/><path d="M8 21h8l-1-7H9z"/></svg></div>
+        <h3>Small batches</h3>
+        <p>Only a few cakes leave her kitchen each day, so every one gets proper attention.</p>
+      </div>
+      <div class="feat" data-rev style="--d:180ms">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M12 21s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 9a3.5 3.5 0 0 1 7 2.5C19 16.5 12 21 12 21Z"/></svg></div>
+        <h3>Made your way</h3>
+        <p>Flavour, colours, theme and the message on top are all decided by you.</p>
+      </div>
+      <div class="feat" data-rev style="--d:270ms">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></div>
+        <h3>One baker, one kitchen</h3>
+        <p>You talk to the person actually baking your cake, from the first message to the last pearl.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== MENU & PRICES ========================== -->
+<section class="sec" id="menu">
+  <div class="wrap">
+    <div class="sec-head" data-rev>
+      <span class="eyebrow">Menu &amp; prices</span>
+      <h2>Pick a size, then a <span class="script">flavour</span></h2>
+      <p>
+        Every cake here is made to order, one at a time. Six flavours across three sizes,
+        with the same hand-piped finish on all of them. Prices below are the list price for
+        that size and flavour.
+      </p>
+      <img class="rule" src="assets/decor/divider.svg" alt="" width="168" height="26">
+    </div>
+
+    <div class="grid g3" id="priceGrid"><!-- built by app.js --></div>
+
+    <!-- ------------------------- specials ------------------------- -->
+    <div class="sec-head" style="margin-top:clamp(3rem,8vw,4.5rem)" data-rev>
+      <span class="eyebrow">Also on the menu</span>
+      <h2>Combos, cupcakes and <span class="script">something special</span></h2>
+      <p>These are priced on their own, separately from the size and flavour list above.</p>
+      <img class="rule" src="assets/decor/divider.svg" alt="" width="168" height="26">
+    </div>
+
+    <div class="grid g2" id="spGrid"><!-- built by app.js --></div>
+
+    <!-- --------------------- the general pricing ------------------- -->
+    <div class="note" data-rev>
+      <h3>How the pricing works</h3>
+      <ul>
+        <li><b>The listed price is the starting price</b> for that cake in that size and flavour,
+            with her usual buttercream finish, a piped border and a short message on top.</li>
+        <li><b>Costs a little more:</b> heavy Lambeth piping, sculpted or themed designs, extra
+            tiers, fresh flowers, gold plaques and bought toppers.</li>
+        <li><b>Priced on request:</b> cheesecake cups, dessert boxes, cake bouquets and anything
+            custom. Ask her for photos of what she has made before, and she will quote it in the chat.</li>
+        <li><b>Nothing is charged on this website.</b> Mariya confirms the final price with you on
+            WhatsApp or Instagram before she starts baking, so there are no surprises.</li>
+        <li><b>Sizes:</b> bento serves 1–2, half kg serves 4–6, one kg serves 8–12.
+            Bigger than 1&nbsp;kg and tiered cakes are quoted separately.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================= GALLERY ============================= -->
+<section class="sec" id="gallery">
+  <div class="wrap">
+    <div class="sec-head" data-rev>
+      <span class="eyebrow">The gallery</span>
+      <h2>Cakes she has <span class="script">actually made</span></h2>
+      <p>Every photo here is her own work. Tap any cake to see it bigger, or send it back to
+        her as a reference for yours.</p>
+    </div>
+
+    <div class="filters" id="galFilters" role="group" aria-label="Filter the gallery"><!-- built by app.js --></div>
+    <div class="gal" id="galGrid"><!-- built by app.js --></div>
+  </div>
+</section>
+
+<!-- ============================== ABOUT ============================== -->
+<section class="sec" id="about">
+  <div class="wrap">
+    <div class="panel">
+      <div class="about">
+        <div class="about-photo" data-rev>
+          <picture>
+            <source type="image/webp" sizes="(min-width:860px) 360px, 90vw" srcset="assets/img/mariya-sm.webp 640w, assets/img/mariya.webp 1200w">
+            <img src="assets/img/mariya-sm.jpg" sizes="(min-width:860px) 360px, 90vw"
+                 srcset="assets/img/mariya-sm.jpg 640w, assets/img/mariya.jpg 960w"
+                 alt="Mariya, the baker behind _thebakeshop._" width="640" height="853" loading="lazy" decoding="async">
+          </picture>
+          <div class="badge">
+            <img src="assets/logo-mark.png" alt="" width="26" height="26">
+            <span>Baked by Mariya</span>
+          </div>
+        </div>
+
+        <div class="about-body" data-rev style="--d:120ms">
+          <span class="eyebrow">About the baker</span>
+          <h2>The person behind <span class="script">the bake shop</span></h2>
+
+          <p>
+            Mariya is a home baker in Howly, Barpeta. There is no big kitchen behind
+            _thebakeshop._, no team and no shop. There is one oven, one piping bag, and one
+            person who takes every order herself. She bakes in small batches so nothing sits
+            waiting. Vanilla, butterscotch, strawberry, mango, chocolate, Biscoff. Each cake
+            leaves her kitchen fresh, on the day it is meant for.
+          </p>
+          <p>
+            Her style is soft and pastel. Buttercream in gentle colours, hand-piped Lambeth
+            borders, ribbons, edible pearls and piped florals. She has made doctor-themed
+            cakes, baby shower cakes, anniversary cakes and heart-shaped ones, and she enjoys
+            a new idea. When a cake is ready she boxes it carefully and it is collected the
+            same day, so it reaches you exactly as it left her table.
+          </p>
+
+          <p class="quote">“I bake one cake at a time, and every one leaves my kitchen fresh.”</p>
+
+          <ul class="about-facts">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg> Howly, Barpeta, Assam</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 8h18v12H3z"/><path d="M3 8 6 3h12l3 5"/><path d="M12 3v5"/></svg> Orders collected, not delivered</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg> Orders on Instagram &amp; WhatsApp</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-4.5-7-9.5A3.5 3.5 0 0 1 12 9a3.5 3.5 0 0 1 7 2.5C19 16.5 12 21 12 21Z"/></svg> Custom and themed cakes welcome</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== ORDER ============================== -->
+<section class="sec" id="order">
+  <div class="wrap">
+    <div class="sec-head" data-rev>
+      <span class="eyebrow">Ordering</span>
+      <h2>How to order <span class="script">your cake</span></h2>
+      <p>There is no checkout here. You send Mariya the details, she confirms the price and
+        the date, and then she bakes it.</p>
+      <img class="rule" src="assets/decor/divider.svg" alt="" width="168" height="26">
+    </div>
+
+    <ol class="flow" data-rev>
+      <li><b>Send her a message</b><p>Say hello on WhatsApp or drop an Instagram DM with your date and the occasion.</p></li>
+      <li><b>Share the details</b><p>Tell her the size, flavour, colours and theme, and send a reference picture if you have one.</p></li>
+      <li><b>Confirm price and date</b><p>She checks the date, shares the price in the chat, and confirms your order.</p></li>
+      <li><b>Collect it on the day</b><p>Your cake is boxed and ready. She tells you in the chat when and where to pick it up.</p></li>
+    </ol>
+
+    <div class="order-grid" style="margin-top:clamp(2rem,5vw,3rem)">
+
+      <!-- ---------------------- contact details ---------------------- -->
+      <div class="info-list" data-rev>
+        <a class="info" href="https://wa.me/919864848384" target="_blank" rel="noopener">
+          <span class="ico" style="background:#E6F6EC;color:#1FA855">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+          </span>
+          <span><b>WhatsApp</b><span>+91 98648 48384</span></span>
+        </a>
+
+        <a class="info" href="https://ig.me/m/_thebakeshop._" target="_blank" rel="noopener">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 12a9 9 0 1 1-4.5-7.8"/><path d="M8 12h8M12 8v8"/></svg>
+          </span>
+          <span><b>Instagram DM</b><span>@_thebakeshop._</span></span>
+        </a>
+
+        <a class="info" href="https://www.instagram.com/_thebakeshop._/" target="_blank" rel="noopener">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+          </span>
+          <span><b>See the latest</b><span>instagram.com/_thebakeshop._</span></span>
+        </a>
+
+        <div class="info">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+          </span>
+          <span><b>Pickup, not delivery</b><span>Orders are collected · she arranges it in the chat</span></span>
+        </div>
+
+        <div class="info">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+          </span>
+          <span><b>Notice needed</b><span>The earlier the better · ask early for tier cakes</span></span>
+        </div>
+
+        <div class="info">
+          <span class="ico">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 8h16v12H4z"/><path d="M4 8 12 3l8 5"/><path d="M9 20v-6h6v6"/></svg>
+          </span>
+          <span><b>Payment</b><span>Settled with Mariya in the chat, never on this site</span></span>
+        </div>
+      </div>
+
+      <!-- ------------------------- order form ------------------------ -->
+      <div class="panel" id="orderForm" data-rev style="--d:120ms">
+        <span class="eyebrow">Write your order</span>
+        <h3 style="margin:.2rem 0 .4rem">Fill this in and send it</h3>
+        <p style="font-size:.88rem">
+          Nothing is sent automatically. This just writes your order out neatly, then you choose
+          WhatsApp or Instagram to send it yourself.
+        </p>
+
+        <!-- Filled in when you pick a cake from the gallery -->
+        <div class="attach" id="oAttach" hidden>
+          <img id="oAttachImg" alt="">
+          <div class="attach-txt">
+            <small>Your design</small>
+            <b id="oAttachName"></b>
+          </div>
+          <button type="button" class="attach-x" id="oAttachClear" aria-label="Remove this design">✕</button>
+        </div>
+
+        <div class="field-row" style="margin-top:1.2rem">
+          <div>
+            <label for="oName">Your name</label>
+            <input class="field" id="oName" type="text" autocomplete="name" placeholder="Who should she reply to?">
+          </div>
+
+          <div>
+            <label id="oKindLabel">What would you like?</label>
+            <div class="opts" id="oKind" role="group" aria-labelledby="oKindLabel"><!-- built by app.js --></div>
+          </div>
+
+          <div class="field-row two">
+            <div>
+              <label for="oSize">Size</label>
+              <select class="field" id="oSize"><!-- built by app.js --></select>
+            </div>
+            <div>
+              <label for="oFlavour">Flavour</label>
+              <select class="field" id="oFlavour"><!-- built by app.js --></select>
+            </div>
+          </div>
+
+          <div class="field-row two">
+            <div>
+              <label for="oDate">Date you need it</label>
+              <input class="field" id="oDate" type="date">
+            </div>
+            <div>
+              <label for="oMsg">Message on the cake</label>
+              <input class="field" id="oMsg" type="text" maxlength="60" placeholder="e.g. Happy Birthday Ayan">
+            </div>
+          </div>
+
+          <div>
+            <label for="oNotes">Anything else</label>
+            <textarea class="field" id="oNotes" maxlength="600" placeholder="Colours, theme, a design you have seen on this page, pickup time, eggless — anything she should know."></textarea>
+          </div>
+        </div>
+
+        <div class="total-strip" id="oTotal">
+          <span id="oTotalLabel">Pick a size and flavour to see the list price</span>
+          <b id="oTotalVal">—</b>
+        </div>
+
+        <div class="send-choice">
+          <!-- Shown only when a cake is attached and the browser can share files,
+               which is where the actual photo can travel with the message. -->
+          <button type="button" class="send-opt share" id="sendShare" hidden>
+            <span class="so-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 12v7a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-7"/><path d="M12 16V3"/><path d="m7 8 5-5 5 5"/></svg></span>
+            <span class="so-txt"><b>Send with the photo</b><small>Attaches the cake picture to your message</small></span>
+            <span class="so-go" aria-hidden="true">→</span>
+          </button>
+
+          <button type="button" class="send-opt wa" id="sendWa">
+            <span class="so-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5Z"/></svg></span>
+            <span class="so-txt"><b>Send on WhatsApp</b><small>Opens the chat already typed out</small></span>
+            <span class="so-go" aria-hidden="true">→</span>
+          </button>
+
+          <button type="button" class="send-opt ig" id="sendIg">
+            <span class="so-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg></span>
+            <span class="so-txt"><b>Send on Instagram</b><small>Copies it for you to paste in the DM</small></span>
+            <span class="so-go" aria-hidden="true">→</span>
+          </button>
+
+          <button type="button" class="btn btn-ghost btn-block" id="copyOrder">Just copy the message</button>
+        </div>
+
+        <p class="form-note">
+          No payment is taken on this site. Mariya confirms your price on WhatsApp,
+          and you settle it with her directly.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =============================== FAQ =============================== -->
+<section class="sec" id="faq">
+  <div class="wrap">
+    <div class="sec-head" data-rev>
+      <span class="eyebrow">Good to know</span>
+      <h2>Questions people <span class="script">actually ask</span></h2>
+      <img class="rule" src="assets/decor/divider.svg" alt="" width="168" height="26">
+    </div>
+
+    <div class="faq" data-rev>
+      <details class="q">
+        <summary>How much notice do you need for an order?</summary>
+        <div class="a">The sooner the better. Everything is baked to order by one person, so only
+          a few cakes fit into a day. Message her with your date and she will tell you straight
+          away if she can take it. For tiered or heavily decorated cakes, ask early.</div>
+      </details>
+
+      <details class="q">
+        <summary>Do I pay on this website?</summary>
+        <div class="a">No. There is no checkout here and no online payment. You tell Mariya what
+          you want on WhatsApp or Instagram, she confirms the price for that exact cake, and
+          payment is settled between the two of you in the chat.</div>
+      </details>
+
+      <details class="q">
+        <summary>Do you deliver?</summary>
+        <div class="a">No, there is no delivery. Orders are collected once they are ready.
+          Message Mariya with your date, and she will tell you in the chat when your cake will
+          be boxed and where you can pick it up.</div>
+      </details>
+
+      <details class="q">
+        <summary>Can I get a custom or themed cake?</summary>
+        <div class="a">Yes, that is most of what she does. Doctor-themed, baby shower,
+          anniversary, heart-shaped, candle cakes, cake bouquets, dessert boxes. Send the idea,
+          the colours and the occasion, and she will tell you what she can do in her own
+          piping style.</div>
+      </details>
+
+      <details class="q">
+        <summary>What do the prices on this page include?</summary>
+        <div class="a">A price shown next to a cake, for example ₹530, is the starting price for
+          that cake in that size and flavour. Extra tiers, a bigger size, heavy piping or a
+          special theme can change it. She always confirms the final price in the chat before
+          baking.</div>
+      </details>
+
+      <details class="q">
+        <summary>Do you make eggless cakes?</summary>
+        <div class="a">Please ask her before you order. Whether a particular cake and flavour can
+          be made eggless depends on the cake, so it is best not to assume from the menu. Send a
+          message with your flavour and date and she will tell you what is possible.</div>
+      </details>
+
+      <details class="q">
+        <summary>Can I send a picture of the cake I want?</summary>
+        <div class="a">Yes, please do. Send it on WhatsApp or as an Instagram DM along with your
+          size and flavour. All the work is piped by hand, so she will make her own version of
+          the design and tell you clearly what she can match.</div>
+      </details>
+
+      <details class="q">
+        <summary>Can you write a name or message on the cake?</summary>
+        <div class="a">Yes. Send the exact spelling in the chat so it is written correctly. Short
+          messages sit best on bento cakes, and longer ones on half-kg and 1-kg cakes. Mariya
+          will suggest what fits nicely on the size you have picked.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================== FOOTER ============================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-top">
+      <a class="f-brand" href="#home">
+        <img src="assets/logo.png" alt="" width="46" height="46">
+        <span><b>_thebakeshop._</b><small>Sweet &amp; Delicious</small></span>
+      </a>
+
+      <p>Home baked cakes by Mariya in Howly, Barpeta, Assam.
+         Baked to order and collected fresh. Orders on WhatsApp and Instagram.</p>
+
+      <div class="f-social">
+        <a href="https://www.instagram.com/_thebakeshop._/" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1.1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="https://wa.me/919864848384" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-4.2-1L3 20l1.1-4.1A8.4 8.4 0 1 1 21 11.5Z"/></svg>
+        </a>
+        <a href="tel:+919864848384" aria-label="Call">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a12 12 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2Z"/></svg>
+        </a>
+      </div>
+
+      <nav class="f-links" aria-label="Footer">
+        <a href="#menu">Menu &amp; Prices</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#about">About Mariya</a>
+        <a href="#order">Order</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+
+    <div class="f-bot">
+      <span>© <span id="yr">2026</span> _thebakeshop._ · Baked by Mariya in Howly, Barpeta, Assam</span>
+      <span>Made to order · never stocked</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ============================ OVERLAYS ============================= -->
+<div id="lb" role="dialog" aria-modal="true" aria-label="Cake photo">
+  <button class="lb-btn" id="lb-close" aria-label="Close">✕</button>
+  <button class="lb-btn" id="lb-prev"  aria-label="Previous photo">‹</button>
+  <button class="lb-btn" id="lb-next"  aria-label="Next photo">›</button>
+  <figure>
+    <img id="lb-img" alt="">
+    <figcaption>
+      <b id="lb-name"></b>
+      <span id="lb-desc"></span>
+      <button type="button" class="btn btn-lg" id="lb-buy">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4H6Z"/><path d="M3 6h18"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+        Buy this cake
+      </button>
+    </figcaption>
+  </figure>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Bakery",
+  "name": "_thebakeshop._",
+  "description": "Home bakery in Howly, Barpeta, Assam. Cakes baked to order by Mariya.",
+  "image": "https://maria-bake.github.io/the-bake-shop/assets/img/cake-pink-ribbon.jpg",
+  "telephone": "+91 98648 48384",
+  "founder": { "@type": "Person", "name": "Mariya" },
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Howly",
+    "addressRegion": "Assam",
+    "addressCountry": "IN"
+  },
+  "sameAs": ["https://www.instagram.com/_thebakeshop._/"],
+  "priceRange": "₹₹",
+  "servesCuisine": "Cakes and desserts"
+}
+</script>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
