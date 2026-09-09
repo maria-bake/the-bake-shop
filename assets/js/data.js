@@ -81,6 +81,10 @@ const SHOP = {
       desc: 'Red cocoa sponge under cream cheese frosting, with a shell border and red velvet crumb. ₹1,350 for 1 kg.' },
     { name: 'Tier cake',         price: 1150, from: true, unit: '',            img: 'cake-tier-pink',
       desc: 'Two or three tiers with Lambeth piping. Needs a few days of notice.' },
+    { name: 'Milk cake',         price: 99,   unit: 'each',          img: 'milk-cake',
+      desc: 'Dipped in condensed milk, piped with cream and finished with Biscoff, Oreo or rose.' },
+    { name: 'Brownies',          price: 250,  unit: '6 pieces',      img: 'brownies',
+      desc: 'Fudgy chocolate brownies, each one piped with chocolate on top.' },
     { name: 'Biscoff cheesecake cups', poa: true, unit: 'minimum order 2', img: 'cheesecake-biscoff',
       desc: 'Set in little tubs with a whole Biscoff biscuit on top. Minimum order is 2 cups.' },
     { name: 'Dessert box',       poa: true, unit: '',                 img: 'bento-cheesecake-set',
@@ -93,6 +97,7 @@ const SHOP = {
   imgW: {
     'bento-cheesecake-set': [640, 1200],
     'bento-rose': [640, 960],
+    'brownies': [640, 1200],
     'cake-anniversary-roses': [480, 480],
     'cake-baby-bunny': [480, 480],
     'cake-birthday-pink': [480, 480],
@@ -120,7 +125,8 @@ const SHOP = {
     'cupcakes-hearts': [640, 1200],
     'mariya': [640, 960],
     'mariya-about': [640, 1010],
-    'mariya-about-sq': [360, 476]
+    'mariya-about-sq': [360, 476],
+    'milk-cake': [640, 1200]
   },
 
   /* ---------- the gallery ---------- */
@@ -159,6 +165,10 @@ const SHOP = {
       desc: 'Deep rose ruffles all the way round, with a gold plaque on top.' },
     { img: 'cake-red-bows',          name: 'Red Bow',             cat: 'Cakes',
       desc: 'Smooth pink top with red satin bows and piped roses at the base.' },
+    { img: 'milk-cake',              name: 'Milk Cake',           cat: 'Desserts',
+      desc: 'Sponge dipped in condensed milk, piped with cream and topped with Biscoff, Oreo or rose.' },
+    { img: 'brownies',               name: 'Brownies',            cat: 'Desserts',
+      desc: 'Fudgy chocolate brownies with piped chocolate on top, boxed in sixes.' },
     { img: 'cheesecake-biscoff',     name: 'Biscoff Cheesecake',  cat: 'Desserts',
       desc: 'No-bake Biscoff cheesecake set in cups, biscuit pressed on top.' },
     { img: 'combo-bento-box',        name: 'Bento Gift Box',      cat: 'Combos',
